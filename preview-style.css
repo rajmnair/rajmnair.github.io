@@ -1,0 +1,154 @@
+.single-preview-layout > a {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  display: block;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+img {
+  border: 0 none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+  width: auto;
+}
+
+.adam-static-banner {
+  background: rgba(0, 0, 0, 0) url("img/bg/1.jpg") repeat scroll center center / cover ;
+  padding: 180px 0;
+}
+.banner-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-content h3 {
+  font-family: open sans;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+}
+.count-numb {
+  color: #d6b161;
+  font-weight: 500;
+}
+.preview-pages-port.portfolio-style-four .portfolio-description {
+  padding: 20px;
+}
+.portfolio-description h4 a {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+.area-heading-style-two {
+  margin: 0 auto 40px;
+  width: 60%;
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+.portfolio-description h4 {
+	font-size: 16px;
+}
+.portfolio-column-count-4.portfolio-style-four .portfolio-description {
+  padding: 20px 10px;
+}
+.adam-static-banner {
+  padding: 100px 0;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.adam-static-banner {
+  padding: 100px 0;
+}
+.portfolio-description h4 {
+	font-size: 16px;
+}
+.portfolio-column-count-4 .portfolio-item {
+  width: 50%;
+}
+
+}
+
+@media (max-width: 767px) {
+	.adam-static-banner {
+	  padding: 100px 0;
+	}
+	.banner-content h2 {
+	  font-size: 18px;
+	  font-weight: 400;
+	  line-height: 30px;
+	  margin-bottom: 20px;
+	}
+	.banner-content h3 {
+	  font-family: oswald;
+	  font-size: 15px;
+	  letter-spacing: 2px;
+	  line-height: 25px;
+	  margin-bottom: 20px;
+	  text-transform: uppercase;
+	}	
+
+}
+
+
+.portfolio-item-content-s {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.item-thumbnails {
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-description-ifo {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+.portfolio-description-ifo > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.item-thumbnails a {
+  background: #333 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  height: 45px;
+  left: 50%;
+  line-height: 45px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  visibility: hidden;
+  width: 45px;
+  z-index: 2;
+}
+.item-thumbnails > a:hover {
+  background: #d6b161 none repeat scroll 0 0;
+}
+.item-thumbnails::before {
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+}
+.portfolio-item:hover .item-thumbnails::before,
+.portfolio-item:hover .item-thumbnails a {
+  opacity: 1;
+  visibility: visible;
+}
