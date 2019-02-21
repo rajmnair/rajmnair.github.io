@@ -322,20 +322,22 @@
     --------------------------------------------- */
     $(".intelligent-header").headroom();
 
+    $(".instagram-widget").hide();
     /* ---------------------------------------------
     INSTAGRAM FEED
     --------------------------------------------- */
-    if ($('#instagram-widget').length != 0) {
-        var instaFeedFooter = new Instafeed({
-            target: 'instagram-widget',
-            get: 'user',
-            resolution: 'standard_resolution',
-            userId: 4713066548,
-            limit: '6',
-            accessToken: '4713066548.8d3ef49.6942ccf6893b404185d88e24f7d56229',
-            template: '<li><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></li>'
-        });
-        instaFeedFooter.run();
-    }
+    // if ($('#instagram-widget').length != 0) {
+        
+    //     var instaFeedFooter = new Instafeed({
+    //         target: 'instagram-widget',
+    //         get: 'user',
+    //         resolution: 'standard_resolution',
+    //         userId: "rajeshxnair",
+    //         limit: '6',
+    //         // accessToken: '4713066548.8d3ef49.6942ccf6893b404185d88e24f7d56229',
+    //         template: '<li><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></li>'
+    //     });
+    //     // instaFeedFooter.run();
+    // }
 
 })(jQuery);
