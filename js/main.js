@@ -320,7 +320,7 @@
     /* ---------------------------------------------
     INTELLIGENT HEADER ACTIVE 
     --------------------------------------------- */
-    $(".intelligent-header").headroom();
+    // $(".intelligent-header").headroom();
 
     $(".instagram-widget").hide();
     /* ---------------------------------------------
