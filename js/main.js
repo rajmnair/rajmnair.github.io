@@ -8,6 +8,7 @@ gtag('config', 'UA-92728001-2');
 (function($) {
     'use strict';
 
+    progressively.init({});
     /*------------------------------------------------
      Magnificpopup for gallery section
     -------------------------------------------------- */
