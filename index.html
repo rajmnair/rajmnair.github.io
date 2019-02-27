@@ -88,13 +88,11 @@
                             <div class="about-text-content">
                                 <h1 class="cd-headline clip is-visiblefull-width">
                                     <span>Learn to</span>
-                                    <span class="cd-words-wrapper">
-                                        <b class="is-visible">DESIGN </b>
-                                        <b>IDEATE </b>
-                                        <b>CODE </b>
-                                        <b>FABRICATE </b>
-                                        <b>3D PRINT </b>
-                                        <b>SOLVE </b>
+                                    <span class="cd-words-wrapper txt-rotate" 
+                                            data-period="1000"  
+                                            style="color: #D6B161" 
+                                            data-rotate='[ "DESIGN", "IDEATE", "CODE", "FABRICATE", "3D PRINT","SOLVE"]'
+                                    >
                                     </span>
                                         <br class="hidden-xs">
                                     <span>& Do awesome stuff.</span>
@@ -281,6 +279,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <script type="text/javascript">
+            var TxtRotate=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||1e3,this.txt="",this.tick(),this.isDeleting=!1};TxtRotate.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=300-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=300):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("txt-rotate"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-rotate"),s=t[e].getAttribute("data-period");i&&new TxtRotate(t[e],JSON.parse(i),s)}var o=document.createElement("style");o.type="text/css",o.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid #666 }",document.body.appendChild(o)};
+        </script>
         <!--  -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92728001-2"></script>
+
+        <sv
     </body>
