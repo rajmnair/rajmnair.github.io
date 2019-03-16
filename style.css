@@ -1900,14 +1900,16 @@ sub.duration {
   float: right;
   margin-top: 6px;
 }
+
 /*--------------------------------------
   21. About me
 ----------------------------------------*/
 .about-me-row {
-  background: rgba(0, 0, 0, 0) url("img/bg/8.jpg") repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 1) url("img/bg/8.jpg") repeat scroll center center / cover ;
+  
   padding: 200px 0;
 }
-.about-text-content h1 {
+.about-text-content h1 {  
   color: #fff;
 }
 .about-text-content > p {
@@ -2685,4 +2687,19 @@ pre {
 }
 .footer-fun-text h3 + p {
   margin-bottom: 25px;
+}
+ #hovme{
+    transition:  all 0.2s;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+#hovme:hover{
+    transform:  scale(1.03);
+    cursor: pointer;
+    background: rgba(0,0,0,0.05);
+}
+.raj-quote{
+  color: white;
+  line-height: 1.5;
 }
