@@ -340,7 +340,7 @@ gtag('config', 'UA-92728001-2');
     //         target: 'instagram-widget',
     //         get: 'user',
     //         resolution: 'standard_resolution',
-    //         userId: "rajeshxnair",
+    //         userId: "RajeshXNair",
     //         limit: '6',
     //         // accessToken: '4713066548.8d3ef49.6942ccf6893b404185d88e24f7d56229',
     //         template: '<li><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></li>'
